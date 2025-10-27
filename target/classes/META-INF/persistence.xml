@@ -10,15 +10,15 @@
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" 
-                value="jdbc:postgresql://dpg-d3cemh56ubrc73enbftg-a.singapore-postgres.render.com:5432/postgres_database_cjcp"/>
+                value="jdbc:postgresql://dpg-d3vn45ur433s73d174ng-a.singapore-postgres.render.com:5432/mydb_66e8"/>
       <property name="javax.persistence.jdbc.user" 
-                value="postgres_database_cjcp_user"/>
+                value="postgre"/>
       <property name="javax.persistence.jdbc.password" 
-                value="YuJQWikEQWhriEaYb1GAtogfoOHR1HkE"/>
+                value="kRpNZ31S7EwnfmzPldtNHdWr7iUMQFWK"/>
       <property name="javax.persistence.jdbc.driver" 
                 value="org.postgresql.Driver"/>
       <property name="javax.persistence.schema-generation.database.action" 
-                value="validate"/>
+                value="update"/>
     </properties>
   </persistence-unit>
 </persistence>

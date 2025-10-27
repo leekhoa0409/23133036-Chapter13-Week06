@@ -42,7 +42,7 @@
 	         <artifactId>jakarta.persistence-api</artifactId>
 	         <version>3.1.0</version>
 	     </dependency>
-	
+
 	     <!-- Hibernate Core (JPA implementation) -->
 	     <dependency>
 	         <groupId>org.hibernate.orm</groupId>
@@ -57,4 +57,31 @@
         <version>42.7.3</version>
     </dependency>
 	</dependencies>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
